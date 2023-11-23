@@ -1,0 +1,7 @@
+{
+  "name": "skyscanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

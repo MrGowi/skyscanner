@@ -1,0 +1,42 @@
+<ion-card color="light">
+
+  <ion-card-header>
+    Stadt Bearbeiten
+  </ion-card-header>
+
+  <ion-card-content>
+
+    <form
+    (ngSubmit)="saveStadt(stadtForm.value)"
+    [formGroup]="stadtForm">
+
+      <ion-input
+          label="Name"
+          labelPlacement="floating"
+          errorText="Name fehlt"
+          formControlName="name"
+          [required]="true"
+      ></ion-input>
+
+      <ion-list>
+        <ion-item>
+          Temperatur: {{wetterData.main.temp}}
+        </ion-item>
+      </ion-list>
+       
+      <ion-button
+        type="cancel"
+        (click)="back()"
+        fill="clear">Abbrechen
+      </ion-button>
+
+      <ion-button
+          type="submit"
+          fill="clear">Speichern
+        </ion-button>
+
+    </form>
+
+  </ion-card-content>
+
+</ion-card>
