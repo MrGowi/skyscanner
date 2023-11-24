@@ -5,16 +5,19 @@ import { SupabaseService } from '../services/supabase.service';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { BatteryInfo, Device } from '@capacitor/device';
+import { CameraComponent } from '../camera/camera.component';
+
 
 @Component({
   selector: 'app-tab3',
   templateUrl: 'tab3.page.html',
   styleUrls: ['tab3.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule]
+  imports: [IonicModule, CommonModule, FormsModule, CameraComponent]
 })
 export class Tab3Page {
 
+  
   longitude: number = 0
   latitude: number = 0
   
